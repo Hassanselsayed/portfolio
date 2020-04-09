@@ -165,6 +165,7 @@ header {
 	position: sticky;
 	top: 0;
 	width: fit-content;
+	padding-top: 20px;
 	li {
 		padding: 15px 10px;
 		width: fit-content;
@@ -247,6 +248,8 @@ header {
 	}
 	.project-skill-list {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		li {
 			margin: 5px;
 		}
@@ -365,6 +368,48 @@ footer {
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}
+
+	.projects {
+		padding: 5vh 0;
+		.project {
+			margin-top: 5vh;
+			display: flex;
+			align-items: center;
+			.project-image {
+				width: 40%;
+			}
+			.live-links {
+				margin: 20px 0;	
+			}
+			.project-info {
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				p {
+					margin: 5px 0;
+				}
+			}
+		}
+		.project:nth-of-type(even) {
+			.project-image {
+				order: 2;
+			}
+			.project-info {
+				order: 1;
+			}
+		}
+		.project-skill-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li {
+				margin: 5px;
+			}
+		}
+	}
+
+
 	.contact {
 		img {
 			display: none;
