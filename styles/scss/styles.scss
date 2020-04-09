@@ -106,6 +106,7 @@ input[type=submit] {
 }
 p {
 	line-height: 30px;
+	font-size: 0.9rem;
 }
 
 
@@ -166,6 +167,7 @@ header {
 	top: 0;
 	width: fit-content;
 	padding-top: 20px;
+	font-size: 0.9rem;
 	li {
 		padding: 15px 10px;
 		width: fit-content;
@@ -223,18 +225,24 @@ header {
 		display: flex;
 		align-items: center;
 		.project-image {
-			width: 40%;
+			width: 50%;
 		}
 		.live-links {
 			margin: 20px 0;	
 		}
 		.project-info {
-			width: 60%;
+			width: 50%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			p {
-				margin: 5px 0;
+			h3 {
+				font-size: 1.3rem;
+			}
+			h4 {
+				font-size: 1.2rem;
+			}
+			p:nth-child(2) {
+				margin: 10px 0;
 			}
 		}
 	}
@@ -250,8 +258,9 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin: 10px 0;
 		li {
-			margin: 5px;
+			margin: 0 10px;
 		}
 	}
 }
@@ -306,6 +315,28 @@ footer {
 
 
 /* Media Query */
+@media(max-width: 800px) {
+	.projects {
+		.project {
+			flex-direction: column;
+			.project-image {
+				width: 60%;
+			}
+			.project-info {
+				width: 90%;
+			}
+		}
+		.project:nth-of-type(even) {
+			.project-image {
+				order: 1;
+			}
+			.project-info {
+				order: 2;
+			}
+		}
+
+	}
+}
 @media (max-width: 650px) {
 	.hamburger,
 	.exit-responsive {
@@ -347,9 +378,8 @@ footer {
 		}
 	}
 	.social-links {
-		font-size: 0.9rem;
 		li {
-			padding: 5px;
+			padding: 15px 5px;
 		}
 	}
 	.about {
@@ -369,45 +399,7 @@ footer {
 		}
 	}
 
-	.projects {
-		padding: 5vh 0;
-		.project {
-			margin-top: 5vh;
-			display: flex;
-			align-items: center;
-			.project-image {
-				width: 40%;
-			}
-			.live-links {
-				margin: 20px 0;	
-			}
-			.project-info {
-				width: 60%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				p {
-					margin: 5px 0;
-				}
-			}
-		}
-		.project:nth-of-type(even) {
-			.project-image {
-				order: 2;
-			}
-			.project-info {
-				order: 1;
-			}
-		}
-		.project-skill-list {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			li {
-				margin: 5px;
-			}
-		}
-	}
+
 
 
 	.contact {
