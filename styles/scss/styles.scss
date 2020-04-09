@@ -159,18 +159,17 @@ header {
 
 // main layout
 // social links layout
-// .social-links {
-// 	display: flex;
-// 	flex-direction: column;
-// 	position: sticky;
-// 	top: 0;
-// 	width: fit-content;
-// 	margin-top: 20px;
-// 	li {
-// 		padding: 15px 10px;
-// 		width: fit-content;
-// 	}
-// }
+.social-links {
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+	width: fit-content;
+	li {
+		padding: 15px 10px;
+		width: fit-content;
+	}
+}
 
 // about section layout
 .about {
@@ -345,7 +344,7 @@ footer {
 		}
 	}
 	.social-links {
-		// font-size: 0.9rem;
+		font-size: 0.9rem;
 		li {
 			padding: 5px;
 		}
