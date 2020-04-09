@@ -379,7 +379,7 @@ footer {
 	}
 	.social-links {
 		li {
-			padding: 15px 5px;
+			// padding: 15px 5px;
 		}
 	}
 	.about {
@@ -426,7 +426,9 @@ footer {
 	html {
 		font-size: 100%;
 	}
-
+	p {
+		text-align: center;
+	}
 	.skills {
 		.skills-table {
 			grid-template-columns: repeat(2, 1fr);
