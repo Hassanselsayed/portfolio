@@ -224,6 +224,7 @@ header {
 		margin-top: 5vh;
 		display: flex;
 		align-items: center;
+		min-height: 80vh;
 		.project-image {
 			width: 50%;
 		}
@@ -398,8 +399,6 @@ footer {
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}
-
-
 
 
 	.contact {
