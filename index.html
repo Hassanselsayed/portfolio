@@ -1,11 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/logo.jpg">
+
+    <script src="https://kit.fontawesome.com/5356eff725.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400|Playfair+Display:700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
     <title>Hassan Elsayed</title>
 </head>
+
 <body>
+    <header id="home">
+
+        <button class="hamburger" title="Click here to open up hamburger menu"><i class="fas fa-bars"></i>
+            <span class="sr-only">Click here to open up hamburger menu</span>
+        </button>
+        <nav class="menu">
+            <div class="full-screen">
+                <button class="exit-responsive" title="Click me to close the navigation">
+                    <i class="fas fa-times"></i>
+                    <span class="sr-only">Click me to close the navigation</span>
+                </button>
+                <ul class="top-nav">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Hassan Elsayed</h1>
+            <h2>Front-End Web Developer</h2>
+            <a href="#about" id="down-button">
+                <i class="far fa-arrow-alt-circle-down" aria-hidden="true" title="click to go to About Me section"></i>
+                <span class="sr-only">click to go to about me section</span>
+            </a>
+        </div>
+    </header>
     
+    
+    <main>
+        <div class="social-links">
+            <ul class="social-list">
+                <li>
+                    <a href="https://linkedin.com/in/hassan-elsayed-55746ab0" title="link to my linkedin page">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="sr-only">link to my linkedin page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Hassanselsayed" title="link to my github page">
+                        <i class="fab fa-github"></i>
+                        <span class="sr-only">link to my github page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/HassanSElsayed" title="link to my twitter page">
+                        <i class="fab fa-twitter"></i>
+                        <span class="sr-only">link to my twitter page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#home">
+                        <i class="far fa-arrow-alt-circle-up" aria-hidden="true" title="click to go back to the top"></i>
+                        <span class="sr-only">click to go back to the top</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <!-- about section -->
+            <section class="about clearfix" id="about">
+                <div class="img-container">
+                    <img src="./assets/me.jpg" alt="a headshot of me">
+                </div>
+                <div class="about-info">
+                    <h2>about me</h2>
+                    <p>I’m a Web Developer with a background in Mechanical Engineering. Through my background training and
+                        work experience,
+                        I’ve developed invaluable skills that have helped me greatly in outlining my projects as well as
+                        collaborating in team
+                        projects. Combining these skills with my technical skillset has paved the way to successfully
+                        building Accessible,
+                        Responsive Web Applications, individually and in teams.</p>
+                </div>
+            </section>
+    
+            <!-- skills section -->
+            <section class="skills" id="skills">
+                <h2>skills</h2>
+                <div class="skills-table">
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-html-5-100.png" alt="" aria-hidden="true">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-javascript-100.png" alt="" aria-hidden="true">
+                        <h3>JavaScript</h3>
+                    </div>
+    
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-firebase-100.png" alt="" aria-hidden="true">
+                        <h3>Firebase</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-css3-100.png" alt="" aria-hidden="true">
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-react-100.png" alt="" aria-hidden="true">
+                        <h3>React</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-jquery-100.png" alt="" aria-hidden="true">
+                        <h3>jQuery</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-sass-100.png" alt="" aria-hidden="true">
+                        <h3>SASS</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-visual-studio-code-2019-100.png" alt="" aria-hidden="true">
+                        <h3>VSCode</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-web-accessibility-100.png" alt="" aria-hidden="true">
+                        <h3>Accessibility (WCAG)</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-git-100.png" alt="" aria-hidden="true">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-github-100.png" alt="" aria-hidden="true">
+                        <h3>Github</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/skills-tools/icons8-responsive-100.png" alt="" aria-hidden="true">
+                        <h3>Responsive design</h3>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- projects section -->
+            <section class="projects" id="projects">
+                <h2>projects</h2>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/numbers-world-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>Number world</h3>
+                        <p>Divided into two pages, this app is for the number/math lovers out there. The first page is a fact
+                            generator where you either enter a number or generate a number randomly, then an API call is made to
+                            give you a fact using that number. The second page is a math quiz where you choose a difficulty
+                            level and evaluate a simple expression that is generated using another API based your choice.</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>Firebase</p>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <p>REST API</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://hassanselsayed.github.io/number-world/" class="project-link">Open live</a>
+                            <a href="https://github.com/Hassanselsayed/number-world.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/comet-tracker-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>Comet tracker</h3>
+                        <p>An app that allows the user to track the movement of celestial bodies around planets during a period
+                            of their choosing. This was a pair programming project.</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>jQuery</p>
+                            </li>
+                            <li>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                            </li>
+                            <li>
+                                <p>REST API</p>
+                            </li>
+                            <li>
+                                <p>Pair programming</p>
+                            </li>
+                            <li>
+                                <p>Git collaboration</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://comettrackerhassanlaura.github.io/cometTrackerHassanLaura/" class="project-link">Open
+                                live</a>
+                            <a href="https://github.com/Hassanselsayed/cometTracker.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/to-do-list-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>To do list</h3>
+                        <p>An app that satisfies your organizational skills by creating adding daily tasks to your weekly to do
+                            list.</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>jQuery</p>
+                            </li>
+                            <li>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://hassanselsayed.github.io/toDoList/" class="project-link">Open live</a>
+                            <a href="https://github.com/Hassanselsayed/toDoList.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/invoicing-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>Invoicing system</h3>
+                        <p>An app that calculates the total invoice based on the items that the user inputs with the 13% HST</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>jQuery</p>
+                            </li>
+                            <li>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://hassanselsayed.github.io/invoicingSystem/" class="project-link">Open live</a>
+                            <a href="https://github.com/Hassanselsayed/invoicingSystem.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/apod-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>Astronomy picture of the day (APOD)</h3>
+                        <p>An app that uses the NASA API to give an astronomy picture of the day based on the user's date
+                            choice.</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>jQuery</p>
+                            </li>
+                            <li>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <p>REST API</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://hassanselsayed.github.io/astronomyPictureOfTheDay/" class="project-link">Open live</a>
+                            <a href="https://github.com/Hassanselsayed/astronomyPictureOfTheDay.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image"><img src="./assets/projects/willow-image.png" alt=""></div>
+                    <div class="project-info">
+                        <h3>Willow</h3>
+                        <p>A porfolio app that shows the work of the traveler/photographer Willow</p>
+                        <h4>Skills utilized</h4>
+                        <ul class="project-skill-list">
+                            <li>
+                                <p>HTML5</p>
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                            </li>
+                        </ul>
+                        <div class="live-links">
+                            <a href="https://hassanselsayed.github.io/willow/" class="project-link">Open live</a>
+                            <a href="https://github.com/Hassanselsayed/willow.git" class="project-link">Open in Github</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <img src="./assets/contact-image.jpg" alt="">
+                <form action="">
+                    <h2>Contact me</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Please enter your name">
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="Please enter your email">
+    
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" required
+                        placeholder="Please enter your message"></textarea>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © Hassan Elsayed 2020</p>
+        <img src="./assets/logo.jpg" alt="logo">
+    </footer>
+
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
+        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

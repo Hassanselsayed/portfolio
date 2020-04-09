@@ -1,1 +1,400 @@
 @import "setup";
+
+// stripping default styles
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+button,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+button {
+	background: none;
+	border: none;
+	color: rgb(255, 255, 255);
+}
+
+// generic element styling
+html {
+	font-size: 125%;
+}
+body {
+	color: rgb(255, 255, 255);
+	background-image: url(../assets/body-background.jpg);
+	background-position: top;
+	background-size: cover;
+}
+body,
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+}
+input[type=submit] {
+	border: none;
+	color: rgb(255, 255, 255);
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1350px;
+}
+input[type=submit],
+.project-link {
+	background-color: rgb(98, 159, 209);
+}
+.project-link,
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea {
+    padding: 10px 15px;
+}
+.top-nav li,
+h2,
+input[type=submit] {
+	text-transform: uppercase;
+}
+img {
+	max-width: 100%;
+}
+
+button,
+a,
+input[type=submit] {
+	transition: all 0.5s ease;
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+	color: rgb(165, 42, 42);
+}
+
+.project-link:hover,
+.project-link:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+	background-color: rgb(128, 128, 128);
+}
+
+button,
+a,
+input[type=submit] {
+	cursor: pointer;
+}
+p {
+	line-height: 30px;
+}
+
+
+// header layout
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+.exit-responsive {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+.show.menu {
+	display: block;
+}
+header {
+	height: 100vh;
+	.hamburger {
+		height: 5vh;
+		position: relative;
+		top: 20px;
+		left: 20px;
+	}
+	nav {
+		.top-nav {
+			display: flex;
+			justify-content: center;
+			margin-right: 1vw;
+			li {
+				margin: 10px 15px;
+			}
+		}
+	}
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		height: 95vh;
+		padding-bottom: 20vh;
+		h1,
+		h2 {
+			margin-bottom: 5vh;
+		}
+		a {
+			font-size: 2rem;
+		}
+	}
+}
+
+// main layout
+// social links layout
+.social-links {
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+	width: fit-content;
+	li {
+		padding: 10px;
+		width: fit-content;
+	}
+}
+
+// about section layout
+.about {
+	display: flex;
+	align-items: center;
+	min-height: 90vh;
+	.img-container {
+		width: 35%;
+		margin-right: 5%;
+		text-align: center;
+		img {
+			border-radius: 50%;
+			// object-fit: inherit;
+		}
+	}
+	.about-info {
+		width: 60%;
+		p {
+			margin-top: 15px;
+		}
+	}
+}
+
+// skills section layout
+.skills {
+	min-height: 100vh;
+	h2 {
+		text-align: center;
+		padding-top: 10vh;
+	}
+	.skills-table {
+		margin: 5vh auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+		.icon {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}
+
+// projects section layout
+.projects {
+	padding: 5vh 0;
+	.project {
+		margin-top: 5vh;
+		display: flex;
+		align-items: center;
+		.project-image {
+			width: 40%;
+		}
+		.live-links {
+			margin: 20px 0;	
+		}
+		.project-info {
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p {
+				margin: 5px 0;
+			}
+		}
+	}
+	.project:nth-of-type(even) {
+		.project-image {
+			order: 2;
+		}
+		.project-info {
+			order: 1;
+		}
+	}
+	.project-skill-list {
+		display: flex;
+		li {
+			margin: 5px;
+		}
+	}
+}
+
+// contact section layout
+.contact {
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+	// width: 90%;
+	img {
+		max-width: 45%;
+		height: auto;
+		margin-left: 5%;
+		opacity: 1;
+	}
+	form {
+		padding: 3vh 0;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2,
+		label,
+		input,
+		textarea {
+			margin-bottom: 2vh;
+			width: 80%;
+		}
+		h2,
+		label {
+			text-align: center;
+		}
+		input::placeholder,
+		textarea::placeholder  {
+			font-size: 14px;
+		}
+		textarea {
+			resize: none;
+		}
+	}
+}
+
+// footer layout
+footer {
+	background-color: rgb(2, 12, 22);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+}
+
+
+/* Media Query */
+@media (max-width: 650px) {
+	.hamburger,
+	.exit-responsive {
+		display: block;
+		font-size: 25px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu .full-screen {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.99);
+		color: rgb(255, 255, 255);
+		z-index: 10;
+	}
+
+	.full-screen ul {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10%;
+	}
+
+	header {
+		nav {
+			.top-nav {
+				li {
+					font-size: 50px;
+					text-align: center;
+					width: 100%;
+					margin: 2vh auto;
+				}
+			}
+		}
+	}
+	.social-links {
+		font-size: 0.9rem;
+		li {
+			padding: 5px;
+		}
+	}
+	.about {
+		flex-direction: column;
+		.img-container {
+			width: 70%;
+			margin-right: 0;
+		}
+		.about-info {
+			width: 90%;
+		}
+	}
+	.skills {
+
+		.skills-table {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	.contact {
+		img {
+			display: none;
+		}
+		form {
+			background-image: url(../assets/contact-image-2.jpg);
+			background-position: center;
+			margin: 0 auto;
+			width: 90%;
+			color: black;
+			input[type=submit] {
+				background-color: rgb(128, 128, 128);
+			}
+			input[type=submit]:hover,
+			input[type=submit]:focus {
+				background-color: rgb(165, 42, 42);
+			}
+		}
+	}
+}
+@media (max-width: 450px) {
+	html {
+		font-size: 100%;
+	}
+
+	.skills {
+		.skills-table {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+}
+
