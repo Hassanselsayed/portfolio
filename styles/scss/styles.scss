@@ -108,6 +108,10 @@ p {
 	line-height: 30px;
 	font-size: 0.9rem;
 }
+h2,
+h3 {
+	color: rgb(255, 214, 0);
+}
 
 
 // header layout
@@ -119,38 +123,52 @@ p {
 	position: relative;
 	top: 30px;
 	left: 30px;
+	font-size: 1.5rem;
+	// color: rgb(255, 255, 255);
 }
 .show.menu {
 	display: block;
 }
-header {
-	height: 100vh;
+.nav-div {
+	position: sticky;
+	top: -2px;
 	.hamburger {
 		height: 5vh;
 		position: relative;
-		top: 20px;
-		left: 20px;
+		top: 10px;
+		left: 10px;
+		font-size: 0.9rem;
+		// padding-bottom: 15px;
+		// color: rgb(255, 214, 0);
+		// transform: translateX(-100%);
 	}
 	nav {
 		.top-nav {
 			display: flex;
 			justify-content: center;
-			margin-right: 1vw;
+			background-color: rgba(128, 128, 128, 0.5);
 			li {
 				margin: 10px 15px;
 			}
 		}
 	}
+}
+header {
+	height: 90vh;
 	.header-content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
 		height: 95vh;
-		padding-bottom: 20vh;
+		padding-bottom: 37vh;
 		h1,
 		h2 {
 			margin-bottom: 5vh;
+		}
+		h2 {
+			width: 80%;
+			color: rgb(255, 255, 255);
 		}
 		a {
 			font-size: 2rem;
@@ -166,12 +184,19 @@ header {
 	position: sticky;
 	top: 0;
 	width: fit-content;
-	padding-top: 20px;
-	font-size: 0.9rem;
-	li {
-		padding: 15px 10px;
-		width: fit-content;
+	padding-top: 30px;
+	color: rgb(255, 214, 0);
+	.social-list {
+		// margin-top: 30px;
+		position: absolute;
+		li {
+			padding: 15px 10px;
+			width: fit-content;
+		}
 	}
+}
+.hide-links {
+	display: none;
 }
 
 // about section layout
@@ -213,6 +238,10 @@ header {
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
+			i {
+				width: 50px;
+				height: 50px;
+			}
 		}
 	}
 }
@@ -220,13 +249,16 @@ header {
 // projects section layout
 .projects {
 	padding: 5vh 0;
+	.project:not(:first-of-type) {
+		min-height: 70vh;
+	}
 	.project {
 		margin-top: 5vh;
 		display: flex;
 		align-items: center;
-		min-height: 80vh;
 		.project-image {
 			width: 50%;
+			height: fit-content;
 		}
 		.live-links {
 			margin: 20px 0;	
@@ -268,7 +300,7 @@ header {
 
 // contact section layout
 .contact {
-	margin-top: 10vh;
+	padding-top: 10vh;
 	display: flex;
 	align-items: center;
 	// width: 90%;
@@ -279,7 +311,7 @@ header {
 		opacity: 1;
 	}
 	form {
-		padding: 3vh 0;
+		// padding: 3vh 0;
 		width: 50%;
 		display: flex;
 		flex-direction: column;
@@ -339,10 +371,12 @@ footer {
 	}
 }
 @media (max-width: 650px) {
+	p {
+		text-align: center;
+	}
 	.hamburger,
 	.exit-responsive {
 		display: block;
-		font-size: 25px;
 	}
 
 	.menu {
@@ -366,9 +400,10 @@ footer {
 		padding-top: 10%;
 	}
 
-	header {
+	.nav-div {
 		nav {
 			.top-nav {
+				background-color: transparent;
 				li {
 					font-size: 50px;
 					text-align: center;
@@ -378,9 +413,13 @@ footer {
 			}
 		}
 	}
+	
 	.social-links {
-		li {
-			// padding: 15px 5px;
+		.social-list {
+			margin-top: 0;
+			li {
+				font-size: 0.9rem;
+			}
 		}
 	}
 	.about {
@@ -394,7 +433,6 @@ footer {
 		}
 	}
 	.skills {
-
 		.skills-table {
 			grid-template-columns: repeat(3, 1fr);
 		}
@@ -402,6 +440,10 @@ footer {
 
 
 	.contact {
+		h2,
+		form {
+			color: rgb(0, 0, 0);
+		}
 		img {
 			display: none;
 		}
@@ -410,7 +452,6 @@ footer {
 			background-position: center;
 			margin: 0 auto;
 			width: 90%;
-			color: black;
 			input[type=submit] {
 				background-color: rgb(128, 128, 128);
 			}
@@ -424,9 +465,6 @@ footer {
 @media (max-width: 450px) {
 	html {
 		font-size: 100%;
-	}
-	p {
-		text-align: center;
 	}
 	.skills {
 		.skills-table {

@@ -355,6 +355,11 @@ p {
   font-size: 0.9rem;
 }
 
+h2,
+h3 {
+  color: #ffd600;
+}
+
 .hamburger,
 .exit-responsive {
   display: none;
@@ -364,35 +369,43 @@ p {
   position: relative;
   top: 30px;
   left: 30px;
+  font-size: 1.5rem;
 }
 
 .show.menu {
   display: block;
 }
 
-header {
-  height: 100vh;
+.nav-div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
 }
 
-header .hamburger {
+.nav-div .hamburger {
   height: 5vh;
   position: relative;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
 }
 
-header nav .top-nav {
+.nav-div nav .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 1vw;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
-header nav .top-nav li {
+.nav-div nav .top-nav li {
   margin: 10px 15px;
+}
+
+header {
+  height: 90vh;
 }
 
 header .header-content {
@@ -410,12 +423,17 @@ header .header-content {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 95vh;
-  padding-bottom: 20vh;
+  padding-bottom: 37vh;
 }
 
 header .header-content h1,
 header .header-content h2 {
   margin-bottom: 5vh;
+}
+
+header .header-content h2 {
+  width: 80%;
+  color: white;
 }
 
 header .header-content a {
@@ -436,15 +454,23 @@ header .header-content a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-top: 20px;
-  font-size: 0.9rem;
+  padding-top: 30px;
+  color: #ffd600;
 }
 
-.social-links li {
+.social-links .social-list {
+  position: absolute;
+}
+
+.social-links .social-list li {
   padding: 15px 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.hide-links {
+  display: none;
 }
 
 .about {
@@ -507,8 +533,17 @@ header .header-content a {
   text-align: center;
 }
 
+.skills .skills-table .icon i {
+  width: 50px;
+  height: 50px;
+}
+
 .projects {
   padding: 5vh 0;
+}
+
+.projects .project:not(:first-of-type) {
+  min-height: 70vh;
 }
 
 .projects .project {
@@ -519,11 +554,13 @@ header .header-content a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 80vh;
 }
 
 .projects .project .project-image {
   width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .projects .project .live-links {
@@ -585,7 +622,7 @@ header .header-content a {
 }
 
 .contact {
-  margin-top: 10vh;
+  padding-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +639,6 @@ header .header-content a {
 }
 
 .contact form {
-  padding: 3vh 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,10 +730,12 @@ footer {
 }
 
 @media (max-width: 650px) {
+  p {
+    text-align: center;
+  }
   .hamburger,
   .exit-responsive {
     display: block;
-    font-size: 25px;
   }
   .menu {
     display: none;
@@ -722,11 +760,20 @@ footer {
             flex-direction: column;
     padding-top: 10%;
   }
-  header nav .top-nav li {
+  .nav-div nav .top-nav {
+    background-color: transparent;
+  }
+  .nav-div nav .top-nav li {
     font-size: 50px;
     text-align: center;
     width: 100%;
     margin: 2vh auto;
+  }
+  .social-links .social-list {
+    margin-top: 0;
+  }
+  .social-links .social-list li {
+    font-size: 0.9rem;
   }
   .about {
     -webkit-box-orient: vertical;
@@ -745,6 +792,10 @@ footer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .contact h2,
+  .contact form {
+    color: black;
+  }
   .contact img {
     display: none;
   }
@@ -753,7 +804,6 @@ footer {
     background-position: center;
     margin: 0 auto;
     width: 90%;
-    color: black;
   }
   .contact form input[type=submit] {
     background-color: gray;
@@ -767,9 +817,6 @@ footer {
 @media (max-width: 450px) {
   html {
     font-size: 100%;
-  }
-  p {
-    text-align: center;
   }
   .skills .skills-table {
     -ms-grid-columns: (1fr)[2];
