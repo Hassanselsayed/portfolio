@@ -269,6 +269,7 @@ html {
 body {
   color: white;
   background-image: url(../assets/body-background.jpg);
+  background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
@@ -480,7 +481,7 @@ header .header-content a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .about .img-container {
@@ -503,11 +504,11 @@ header .header-content a {
 
 .skills {
   min-height: 100vh;
+  padding-top: 50px;
 }
 
 .skills h2 {
   text-align: center;
-  padding-top: 10vh;
 }
 
 .skills .skills-table {
@@ -539,7 +540,7 @@ header .header-content a {
 }
 
 .projects {
-  padding: 5vh 0;
+  padding: 50px 0;
 }
 
 .projects .project:not(:first-of-type) {
@@ -554,6 +555,8 @@ header .header-content a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(2, 12, 22, 0.5);
+  padding: 20px;
 }
 
 .projects .project .project-image {
@@ -583,6 +586,7 @@ header .header-content a {
 
 .projects .project .project-info h3 {
   font-size: 1.3rem;
+  margin: 10px auto;
 }
 
 .projects .project .project-info h4 {
@@ -622,7 +626,7 @@ header .header-content a {
 }
 
 .contact {
-  padding-top: 10vh;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,7 +704,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px 10px;
+}
+
+footer img {
+  width: 65px;
 }
 
 /* Media Query */
@@ -777,6 +784,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 20px;
   }
   .about .img-container {
     width: 70%;
@@ -792,6 +800,12 @@ footer {
   .skills .skills-table .icon h4 {
     width: 80%;
   }
+  .contact {
+    background-image: url(../assets/contact-image-2.jpg);
+    background-position: center;
+    width: 90%;
+    margin: 0 auto;
+  }
   .contact h2,
   .contact form {
     color: black;
@@ -800,8 +814,6 @@ footer {
     display: none;
   }
   .contact form {
-    background-image: url(../assets/contact-image-2.jpg);
-    background-position: center;
     margin: 0 auto;
     width: 90%;
   }
@@ -818,8 +830,25 @@ footer {
   html {
     font-size: 100%;
   }
+  .wrapper {
+    width: 85%;
+  }
   .skills .skills-table {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .live-links a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+@media (max-height: 615px) {
+  header .header-content {
+    padding-bottom: 1vh;
+  }
+  .social-links .social-list {
+    margin-top: 50px;
   }
 }
