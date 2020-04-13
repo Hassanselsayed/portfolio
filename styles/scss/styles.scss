@@ -137,16 +137,13 @@ h3 {
 		position: relative;
 		top: 10px;
 		left: 10px;
-		font-size: 0.9rem;
-		// padding-bottom: 15px;
-		// color: rgb(255, 214, 0);
-		// transform: translateX(-100%);
+		// padding-bottom: 20px;
 	}
 	nav {
 		.top-nav {
 			display: flex;
 			justify-content: center;
-			background-color: rgba(128, 128, 128, 0.5);
+			background-color: rgb(128, 128, 128);
 			li {
 				margin: 10px 15px;
 			}
@@ -187,7 +184,7 @@ header {
 	padding-top: 30px;
 	color: rgb(255, 214, 0);
 	.social-list {
-		// margin-top: 30px;
+		margin-top: 200px;
 		position: absolute;
 		li {
 			padding: 15px 10px;
@@ -232,15 +229,15 @@ header {
 		margin: 5vh auto;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 20px;
+		grid-row-gap: 30px;
 		.icon {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-			i {
-				width: 50px;
-				height: 50px;
+			img {
+				width: 75px;
+				height: 75px;
 			}
 		}
 	}
@@ -353,7 +350,7 @@ footer {
 		.project {
 			flex-direction: column;
 			.project-image {
-				width: 60%;
+				width: 80%;
 			}
 			.project-info {
 				width: 90%;
@@ -416,7 +413,7 @@ footer {
 	
 	.social-links {
 		.social-list {
-			margin-top: 0;
+			// margin-top: 60px;
 			li {
 				font-size: 0.9rem;
 			}
@@ -435,6 +432,11 @@ footer {
 	.skills {
 		.skills-table {
 			grid-template-columns: repeat(3, 1fr);
+			.icon {
+				h4 {
+					width: 80%;
+				}
+			}
 		}
 	}
 

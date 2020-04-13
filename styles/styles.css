@@ -387,7 +387,6 @@ h3 {
   position: relative;
   top: 10px;
   left: 10px;
-  font-size: 0.9rem;
 }
 
 .nav-div nav .top-nav {
@@ -397,7 +396,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: gray;
 }
 
 .nav-div nav .top-nav li {
@@ -459,6 +458,7 @@ header .header-content a {
 }
 
 .social-links .social-list {
+  margin-top: 200px;
   position: absolute;
 }
 
@@ -516,7 +516,7 @@ header .header-content a {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 .skills .skills-table .icon {
@@ -533,9 +533,9 @@ header .header-content a {
   text-align: center;
 }
 
-.skills .skills-table .icon i {
-  width: 50px;
-  height: 50px;
+.skills .skills-table .icon img {
+  width: 75px;
+  height: 75px;
 }
 
 .projects {
@@ -712,7 +712,7 @@ footer {
             flex-direction: column;
   }
   .projects .project .project-image {
-    width: 60%;
+    width: 80%;
   }
   .projects .project .project-info {
     width: 90%;
@@ -769,9 +769,6 @@ footer {
     width: 100%;
     margin: 2vh auto;
   }
-  .social-links .social-list {
-    margin-top: 0;
-  }
   .social-links .social-list li {
     font-size: 0.9rem;
   }
@@ -791,6 +788,9 @@ footer {
   .skills .skills-table {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .skills .skills-table .icon h4 {
+    width: 80%;
   }
   .contact h2,
   .contact form {
