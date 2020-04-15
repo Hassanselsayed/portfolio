@@ -610,6 +610,10 @@ header .header-content a {
   margin: 10px 0;
 }
 
+.projects .credit-link {
+  text-decoration: underline;
+}
+
 .projects .project:nth-of-type(even) .project-image {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
