@@ -610,7 +610,7 @@ header .header-content a {
   margin: 10px 0;
 }
 
-.projects .credit-link {
+.projects .credit-link a {
   text-decoration: underline;
 }
 
