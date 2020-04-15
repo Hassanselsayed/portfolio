@@ -42,13 +42,13 @@ input[type=submit],
 input[type=text],
 input[type=email],
 textarea {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h1,
 h2,
 h3,
 h4 {
-	font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
 	text-align: center;
 }
 input[type=submit] {
@@ -113,6 +113,14 @@ h2,
 h3 {
 	color: rgb(255, 214, 0);
 }
+h4 {
+	font-weight: 500;
+}
+input[type=text]:required:invalid,
+input[type=email]:required:invalid,
+textarea:required:invalid {
+	box-shadow: none;
+}
 
 
 // header layout
@@ -167,6 +175,7 @@ header {
 		h2 {
 			width: 80%;
 			color: rgb(255, 255, 255);
+			font-weight: 500;
 		}
 		a {
 			font-size: 2rem;
@@ -254,7 +263,7 @@ header {
 		display: flex;
 		align-items: center;
 		background-color: rgba(2, 12, 22, 0.5);
-		padding: 20px;
+		padding: 20px 40px;
 		.project-image {
 			width: 50%;
 			height: fit-content;
@@ -273,6 +282,7 @@ header {
 			}
 			h4 {
 				font-size: 1.2rem;
+				color: rgb(255, 214, 0);
 			}
 			p:nth-child(2) {
 				margin: 10px 0;

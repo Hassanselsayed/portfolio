@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="./assets/font-mfizz/font-mfizz.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400|Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:500,700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -88,19 +89,13 @@
         </div>
         <div class="wrapper">
             <!-- about section -->
-            <section class="about clearfix" id="about">
+            <section class="about" id="about">
                 <div class="img-container">
                     <img src="./assets/me.jpg" alt="a headshot of me">
                 </div>
                 <div class="about-info">
                     <h2>about me</h2>
-                    <p>I’m a Web Developer with a background in Mechanical Engineering. Through my background training and
-                        work experience,
-                        I’ve developed invaluable skills that have helped me greatly in outlining my projects as well as
-                        collaborating in team
-                        projects. Combining these skills with my technical skillset has paved the way to successfully
-                        building Accessible,
-                        Responsive Web Applications, individually and in teams.</p>
+                    <p>I’m a Front-End Web Developer based in the Greater Toronto Area with a background in Mechanical Engineering. Through my background training and work experience, I’ve developed invaluable skills that have paved the way for my smooth transition into Web Developement. Combining these skills with my technical skillset has enabled me to successfully build accessible, responsive Web Applications, individually and in teams.</p>
                 </div>
             </section>
     
@@ -344,19 +339,18 @@
             <!-- contact section -->
             <section class="contact" id="contact">
                 <img src="./assets/contact-image.jpg" alt="">
-                <form action="">
+                <form action="https://formspree.io/xbjawyzd" method="POST">
                     <h2>Contact me</h2>
                     <label for="name">Name</label>
-                    <input type="text" id="name" required placeholder="Please enter your name">
+                    <input type="text" id="name" required placeholder="Please enter your name" name="name" autocomplete="off">
     
                     <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="Please enter your email">
+                    <input type="email" id="email" required placeholder="Please enter your email" name="email" autocomplete="off">
     
                     <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="10" required
-                        placeholder="Please enter your message"></textarea>
+                    <textarea name="" id="message" cols="30" rows="10" required placeholder="Please enter your message" autocomplete="off"></textarea>
     
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="submit">
                 </form>
             </section>
         </div>

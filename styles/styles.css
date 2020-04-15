@@ -279,14 +279,14 @@ input[type=submit],
 input[type=text],
 input[type=email],
 textarea {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Rubik', sans-serif;
   text-align: center;
 }
 
@@ -359,6 +359,17 @@ p {
 h2,
 h3 {
   color: #ffd600;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+input[type=text]:required:invalid,
+input[type=email]:required:invalid,
+textarea:required:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .hamburger,
@@ -434,6 +445,7 @@ header .header-content h2 {
 header .header-content h2 {
   width: 80%;
   color: white;
+  font-weight: 500;
 }
 
 header .header-content a {
@@ -556,7 +568,7 @@ header .header-content a {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(2, 12, 22, 0.5);
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .projects .project .project-image {
@@ -591,6 +603,7 @@ header .header-content a {
 
 .projects .project .project-info h4 {
   font-size: 1.2rem;
+  color: #ffd600;
 }
 
 .projects .project .project-info p:nth-child(2) {
